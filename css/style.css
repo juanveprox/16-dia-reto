@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: "Poppins", serif;
+    background-color: #1C1C1D;
+    color: #fff;
+}
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem ;
+}
+
+.tabla__pc{
+    width: 100%;
+    text-align: center;
+}
+
+.tabla__pc tr th{
+    background-color: #696969;
+}
+
+.tabla__pc tr td{
+    border: 1px solid #696969;
+}
+
+.tabla__pc tr:nth-of-type(odd){
+    background-color:#a0a0a038;
+}
+/** Tabla de movil**/
+
+.tabla__mobile{
+    display: none;
+    width: 100%;
+}
+
+.fila{
+    border: 1px solid #26815e;
+}
+
+.header{ 
+    background-color: #696969;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.header, .contenido{
+    text-align: center;
+    width: 100%;
+    border: 1px solid #696969;
+
+}
+
+@media (max-width:768px) {
+
+    .tabla__pc{
+        display: none;
+    }
+
+    .tabla__mobile{
+        display:contents ;
+    }
+}
